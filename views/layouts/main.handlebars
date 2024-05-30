@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8">
+        <title>FINTRACK</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"> 
+        
+        <link rel="icon" type="image/x-icon" href="/public/images/favicon.ico">
+
+        <link rel="stylesheet" href="/public/css/main.css">
+    </head>
+
+    <body> 
+        <header> 
+            <div id="logo">
+                <img src="/public/images/logo.png" onclick="location.href='/'" alt="logo" width="100" height="100">
+                <h1 class="home-link"><a href="/">FINTRACK</a></h1> 
+            </div>
+            <div id="links">
+                {{!-- login and register buttons should never be shown with middleware --}}
+                {{#if user}}
+                    <a id="logout-link" href="/user/logout">Logout</a>
+                {{else}} 
+                    <a id="login-link" href="/user/login">Login</a>
+                    <a id="register-link" href="/user/register">Register</a>
+                {{/if}}
+            </div>
+        </header>
+        <main>
+            {{> categories}} <!-- syntax for rendering partial -->
+            {{{ body }}}
+            {{> update}}
+        </main>
+        <footer>
+            <div>
+                
+            </div>
+        </footer>
+    </body>    
+ </html>
+    

@@ -1,0 +1,60 @@
+div.notice {
+    height: 3rem;
+}
+div.status {
+    grid-column: dash;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 100px;
+}
+
+div#login,#formDiv {
+    font-size: 1.5rem;
+    grid-column: dash;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+form {
+    width: 300px;
+}
+
+#formDiv input, #formDiv label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+label > input {
+    width: auto;
+}
+select {
+    margin-bottom: 1rem;
+}
+button {
+    margin-top: 1rem;
+}
+span#register, span#login {
+    margin-top: 1rem;
+    width: 300px;
+    font-size: 0.9rem;
+    justify-self: flex-start;
+}
+
+span#pwConstraints {
+    display: inline-block;
+    font-size: 0.8rem;
+    /* color: red; */
+    line-height: 10px;
+}
+
+a#homeLink {
+    margin-top: 25px;
+}
